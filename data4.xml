@@ -1,0 +1,27 @@
+<?xml-stylesheet href="style1.xsl" type="text/xsl"?>
+<ms:product-list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ms="http://mahendra.com/products" xsi:schemaLocation="http://mahendra.com/products schema2.xsd">
+
+
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+	<ms:category>Alpha</ms:category>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+	<ms:category>Beta</ms:category>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+<ms:product>
+	<ms:code>GH-1234</ms:code>
+	<ms:price>299</ms:price>
+</ms:product>
+</ms:product-list>

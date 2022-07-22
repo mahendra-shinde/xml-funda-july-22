@@ -1,0 +1,13 @@
+<!-- Defined a ROOT element that contains ONE OR MORE copies of elemenet "deposit" -->
+<!ELEMENT deposit-list (deposit+ )>
+<!-- Define the "deposit" which contains EXACT ONE amount -->
+<!ELEMENT deposit (amount, amount?) >
+<!-- Define element "amount" which has NO CHILD ELEMENTS but TEXT ! -->
+<!ELEMENT amount (#PCDATA) >
+<!-- ELement Suffix:
+	No Suffix   : Exact ONE instance
+	+			: Min ONE and Max UNLIMITED
+	?			: Min ZERO and Max UNLIMITED
+-->
+<!ATTLIST deposit acc-no CDATA #REQUIRED
+				  date CDATA #REQUIRED>

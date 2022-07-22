@@ -1,0 +1,10 @@
+<!DOCTYPE loans-list SYSTEM "assign-2.dtd">
+<loans-list>
+	<loan acc-no="AB12345">
+		<application-name  first-name="mahendra" last-name="shinde" />
+			
+		<co-application-name first-name="mahendra" last-name="shinde" /> 
+			
+		
+	</loan>
+</loans-list>

@@ -1,0 +1,18 @@
+<accounts>
+	<!-- Start of ROOT element -->
+	<account id="A63637" type="SB">
+		<!-- Element with "Attributes" -->
+		<customer>
+			<first-name>Divya </first-name> <!-- Elements that contain TEXT -->
+			<last-name> Shinde </last-name>
+		</customer>
+		<closing-balance>34000</closing-balance>
+	</account>
+	<account id="A63638" type="SB">
+		<customer>
+			<first-name>Dakshata</first-name>
+			<last-name>Shinde</last-name>
+		</customer>
+		<closing-balance>54000</closing-balance>
+	</account>
+</accounts> <!-- End of ROOT element -->

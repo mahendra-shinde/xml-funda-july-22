@@ -1,0 +1,50 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://mahendra.com/products" elementFormDefault="qualified" xmlns:t="http://mahendra.com/products">
+
+
+	<xs:element name="product-list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="product" type="t:typeProduct" minOccurs="5" maxOccurs="100" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	
+	<!-- ComplexType is "Group" of few child elements  -->
+	<xs:complexType name="typeProduct">
+		<xs:sequence>
+			<xs:element name="code" type="t:typeProdCode" />
+			<xs:element name="price" type="t:typePrice" />
+			<xs:element name="category" type="t:typeCat" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:positiveInteger" use="optional" default="1001" />
+	</xs:complexType>
+
+	<!-- SimpleTYpe is "Leaf Element" (Element that do not have CHILD-Element) -->
+	<xs:simpleType name="typeProdCode">
+		<xs:restriction base="xs:string">
+			<!-- First TWO Characters in Range "A-P"
+				 Then followed by "Hyphen" 
+				 Then followed by 4 digit number	
+			 -->
+			<xs:pattern value="[A-P]{2}-\d{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- All Userdefined "SimpleType" are "Inherited" from another
+		Existing SimpleTypes-->
+	<xs:simpleType name="typePrice">
+		<xs:restriction base="xs:float">
+			<!-- reference to BASE -->
+			<xs:minInclusive value="100.0" />
+			<xs:maxInclusive value="999.9" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeCat">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="Alpha|Beta" />
+		</xs:restriction>
+
+	</xs:simpleType>
+
+</xs:schema>

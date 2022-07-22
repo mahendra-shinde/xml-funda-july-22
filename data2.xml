@@ -1,0 +1,8 @@
+<!-- Older method of REFERENCING DTD from XML -->
+<!DOCTYPE deposit-list SYSTEM "schema1.dtd">
+<deposit-list>
+	<deposit acc-no="2637637" date="2022-07-22" >
+		<amount>12000 &#x0260E;</amount>	
+		
+	</deposit>
+</deposit-list>
